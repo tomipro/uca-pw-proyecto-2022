@@ -13,10 +13,10 @@
 ## Integrantes
 
 
-| **Tomas Prodan**        | tomy.prodan@gmail.com  | ![tomas-prodan](assets/imgs/tomas-prodan.jpeg) |
-| ----------------------- | ---------------------- | ---------------------------------------------- |
-| **Lucas Debarbieri**    | lucasdeb1702@gmail.com |                                                |
-| **Joaquin Judez Rivas** |                        |                                                |
+| **Tomas Prodan**        | tomy.prodan@gmail.com  | <img src="./assets/imgs/tomas-prodan.jpeg" alt="tomas-prodan" width="200"/> |
+| ----------------------- | ---------------------- | --------------------------------------------------------------------------- |
+| **Lucas Debarbieri**    | lucasdeb1702@gmail.com |                                                                             |
+| **Joaquin Judez Rivas** |                        |                                                                             |
 
 ---
 
