@@ -1,0 +1,230 @@
+:root {
+    --black: #040303;
+    --grey: #5B5B5B;
+    --slate: #7D7C7A;
+    --khaki: #C9C19F;
+    --beige: #EBE8E2;
+    --starry-night: #1F1F1F;
+    --light-violet: #a2a4f5;
+    --white: #FFFFFF;
+    --fuchsia: #ed83eb;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--black);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-container .content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.home-btn {
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+    border-radius: 5px;
+    background-color: var(--starry-night);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    /* add a shadow */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.home-btn:hover {
+    background-color: var(--light-violet);
+    color: var(--starry-night);
+}
+
+.home-pic {
+    float: left;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: .25rem;
+    left: 1rem;
+    background-image: url(/assets/imgs/misc/logo.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.links-nav {
+    height: 100%;
+}
+
+.links-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.links-nav li {
+    list-style: none;
+}
+
+.links-nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    color: #000;
+    font-weight: bold;
+    transition: 0.5s linear;
+}
+
+.activar-boton {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.activar-boton .barra {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.navbar.sticky .barra {
+    background-color: #fff;
+}
+
+.navbar.sticky {
+    background: #000;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    z-index: 999;
+    width: 100%;
+    transition: 0.6s linear ease-in-out;
+}
+
+.navbar.sticky ul li a {
+    color: #fff;
+}
+
+.navbar.sticky .logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-image: url(/assets/imgs/misc/logo-inverted.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.6s linear ease-in-out;
+}
+
+.navbar.sticky .barras {
+    background-color: #fff;
+}
+
+.navbar.sticky a:hover,
+.navbar a:hover {
+    /* transform: scale(1.15); */
+    color: var(--light-violet);
+}
+
+@media only screen and (max-width: 980px) {
+
+    .navbar,
+    .navbar.sticky {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .activar-boton {
+        display: flex;
+        z-index: 999;
+    }
+
+    .links-nav {
+        display: none;
+        width: 100%;
+    }
+
+    .links-nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .links-nav ul li {
+        text-align: center;
+    }
+
+    .links-nav ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .links-nav.active {
+        display: flex;
+    }
+
+    .home-pic {
+        float: left;
+        width: 60vw;
+        height: 60vw;
+        border-radius: 50%;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
