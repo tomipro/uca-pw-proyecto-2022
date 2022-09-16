@@ -3,17 +3,54 @@ window.addEventListener("scroll", function () {
     navbar.classList.toggle("sticky", window.scrollY > 50);
 });
 
-var string = './assets/imgs/nft-art/10.jpeg';
-string = string.substring(0, string.substring('/.'));
+
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-var random = getRandomInt(19);
+// var random = getRandomInt(19);
 
-string += random + '.jpeg';
+// string += random + '.jpeg';
 
-var image = document.getElementsById("galeria1");
-image.src = string;
+// var image = document.getElementsById("galeria1");
+// image.src = string;
+
+
+document.getElementById("refresh-button").addEventListener("click", function () {
+    fotosRandom();
+});
+
+// document.getElementById("refresh-button").onclick = fotosRandom();
+
+
+function fotosRandom() {
+    var n = 18;
+    var lista = [];
+    var string = [];
+    var image = "";
+    var random = getRandomInt(n);
+    
+    for (var i = 0; i < n; i++) {
+        while (lista.includes(random)) {
+            random = getRandomInt(n);
+        }
+        lista.push(random);
+    }
+
+    console.log(lista);
+
+    for (var j = 0; j < n; j++) {
+        string[j] = './assets/imgs/nft-art/';
+        string[j] += lista[j] + '.jpeg';
+        image[j] = string[j];
+        console.log(string[j]);
+    }
+
+    for (var k = 0; k < n; k++) {
+        var strI = "gallery" + k;
+        var foto = document.getElementById(strI);
+        foto.src = string[k];
+    }
+};
 
