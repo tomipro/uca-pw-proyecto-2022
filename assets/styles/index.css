@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    user-select: none;
 }
 
 html,
@@ -269,12 +270,56 @@ html {
     background: linear-gradient(to bottom, var(--white) 0%, var(--light-violet) 100%);
 }
 
-#galeria-container .refresh-btn {
-    font-size: 1.5rem;
-    color: var(--light-violet);
+#galeria-container #refresh-button {
+    font-size: 2rem;
+    color: var(--starry-night);
+    background-color: var(--light-violet);
     font-weight: 700;
-    margin-top: 1rem;
     transition: 0.5s linear;
+    margin-left: 5vw;
+    position: relative;
+    transition: 1s ease;
+    border-radius: 10%;
+    letter-spacing: 0.2rem;
+    user-select: none;
+}
+
+#galeria-container #refresh-button button:hover {
+    scale: (1.25);
+}
+
+#galeria-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    left: calc(40%);
+    margin: 0 0 0 1rem;
+    padding-top: 2.5rem;
+}
+
+#galeria-container .fotos-galeria {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    overflow: hidden;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 0;
+    /* overflow-x: hidden; */
+    /* grid-gap: 10px; */
+    /* background: var(--white); */
+    padding: 1rem;
+}
+
+.fotos-galeria img {
+    padding: 1rem;
+    position: relative;
+    display: block;
+    max-height: 80%;
+}
+
+#galeria-container .fotos-galeria img:hover {
+    scale: calc(1.05);
+    transition: scale 1s linear ease-in-out;
 }
 
 @media only screen and (max-width: 980px) {
@@ -317,10 +362,34 @@ html {
         width: 60vw;
         height: 60vw;
         border-radius: 50%;
-        position: absolute;
+        position: relative;
         top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
+    #galeria-container .fotos-galeria {
+        padding: .5rem;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #galeria-container h1 {
+        left: 25%;
+    }
+
+    .fotos-galeria img {
+        padding: 0.5rem;
+        max-width: 80%;
+    }
 }
+
+/*
+    
+    .fotos-galeria img {
+        padding: 1rem;
+        position: relative;
+        max-height: 80%;
+        max-width: 80%;
+    }
+    /*
