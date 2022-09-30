@@ -4,33 +4,22 @@ window.addEventListener("scroll", function () {
 });
 
 
-
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
-
-// var random = getRandomInt(19);
-
-// string += random + '.jpeg';
-
-// var image = document.getElementsById("galeria1");
-// image.src = string;
-
 
 document.getElementById("refresh-button").addEventListener("click", function () {
     fotosRandom();
 });
 
-// document.getElementById("refresh-button").onclick = fotosRandom();
-
 
 function fotosRandom() {
-    var n = 18;
+    var n = 40;
     var lista = [];
     var string = [];
     var image = "";
     var random = getRandomInt(n);
-    
+
     for (var i = 0; i < n; i++) {
         while (lista.includes(random)) {
             random = getRandomInt(n);
@@ -38,13 +27,13 @@ function fotosRandom() {
         lista.push(random);
     }
 
-    console.log(lista);
+    // console.log(lista);
 
     for (var j = 0; j < n; j++) {
         string[j] = './assets/imgs/nft-art/';
         string[j] += lista[j] + '.jpeg';
         image[j] = string[j];
-        console.log(string[j]);
+        // console.log(string[j]);
     }
 
     for (var k = 0; k < n; k++) {
