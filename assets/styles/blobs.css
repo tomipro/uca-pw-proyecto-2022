@@ -1,0 +1,218 @@
+.blob span:nth-child(1) {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(180deg,
+            rgba(237, 131, 235, 0.42) 31.77%,
+            #a2a4f5 100%);
+    mix-blend-mode: color-dodge;
+    animation: move 55s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    z-index: -1;
+}
+
+.blob span:nth-child(2) {
+    position: fixed;
+    width: 200px;
+    height: 140px;
+    background: linear-gradient(90deg,
+            rgba(237, 131, 235, 0.42) 31.77%,
+            #a2a4f5 100%);
+    mix-blend-mode: color-dodge;
+    animation: move2 35s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    z-index: -1;
+}
+
+.blob span:nth-child(3) {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg,
+            rgba(237, 131, 235, 0.42) 31.77%,
+            #a2a4f5 100%);
+    mix-blend-mode: color-dodge;
+    animation: move3 15s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    z-index: -1;
+}
+
+.blob span:nth-child(4) {
+    position: fixed;
+    width: 150px;
+    height: 100px;
+    background: linear-gradient(90deg,
+            rgba(237, 131, 235, 0.42) 31.77%,
+            #a2a4f5 100%);
+    mix-blend-mode: color-dodge;
+    animation: move4 35s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    z-index: -1;
+}
+
+.blob span:nth-child(5) {
+    position: fixed;
+    width: 200px;
+    height: 160px;
+    background: linear-gradient(90deg,
+            rgba(237, 131, 235, 0.42) 31.77%,
+            #a2a4f5 100%);
+    mix-blend-mode: color-dodge;
+    animation: move5 25s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    z-index: -1;
+}
+
+.blob span:nth-child(6) {
+    position: fixed;
+    width: 100px;
+    height: 65px;
+    background: linear-gradient(90deg,
+            rgba(237, 131, 235, 0.42) 31.77%,
+            #a2a4f5 100%);
+    mix-blend-mode: color-dodge;
+    animation: move6 15s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    z-index: -1;
+}
+
+.blob span:nth-child(7) {
+    position: fixed;
+    width: 250px;
+    height: 200px;
+    background: linear-gradient(90deg,
+            rgba(237, 131, 235, 0.42) 31.77%,
+            #a2a4f5 100%);
+    mix-blend-mode: color-dodge;
+    animation: move7 35s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    z-index: -1;
+}
+
+.blob span:nth-child(8) {
+    position: fixed;
+    width: 150px;
+    height: 100px;
+    background: linear-gradient(90deg,
+            rgba(237, 131, 235, 0.42) 31.77%,
+            #a2a4f5 100%);
+    mix-blend-mode: color-dodge;
+    animation: move8 20s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    z-index: -1;
+}
+
+.blob span:nth-child(9) {
+    position: fixed;
+    width: 100px;
+    height: 150px;
+    background: linear-gradient(90deg,
+            rgba(237, 131, 235, 0.42) 31.77%,
+            #a2a4f5 100%);
+    mix-blend-mode: color-dodge;
+    animation: move9 25s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    z-index: -1;
+}
+
+@keyframes move {
+    from {
+        transform: translate(80vw, -10vh) rotate(-90deg);
+        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+
+    to {
+        transform: translate(60vh, 50vw) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+}
+
+@keyframes move2 {
+    from {
+        transform: translate(-100px, 70vh) rotate(-70deg);
+        border-radius: 19% 63% 27% 59% / 27% 36% 64% 73%;
+    }
+
+    to {
+        transform: translate(10vw, 50vh) rotate(-10deg);
+        border-radius: 26% 61% 33% 69% / 68% 55% 45% 32%;
+    }
+}
+
+@keyframes move3 {
+    from {
+        transform: translate(110vw, 50vh) rotate(-70deg);
+        border-radius: 93% 13% 72% 33% / 27% 36% 64% 73%;
+    }
+    to {
+        transform: translate(60vw, 100px) rotate(-10deg);
+        border-radius: 26% 61% 33% 69% / 68% 55% 45% 32%;
+    }
+}
+
+@keyframes move4 {
+    from {
+        transform: translate(60vw, -100px) rotate(-70deg);
+        border-radius: 19% 63% 27% 59% / 27% 36% 64% 73%;
+    }
+    to {
+        transform: translate(30vw, 800px) rotate(-10deg);
+        border-radius: 26% 61% 33% 69% / 68% 55% 45% 32%;
+    }
+}
+
+@keyframes move5 {
+    from {
+        transform: translate(-10vw, -100px) rotate(-40deg);
+        border-radius: 82% 61% 53% 39% / 87% 56% 64% 53%;
+    }
+    to {
+        transform: translate(30vw, 800px) rotate(-10deg);
+        border-radius: 26% 41% 33% 49% / 38% 50% 51% 37%;
+    }
+}
+
+@keyframes move6 {
+    from {
+        transform: translate(20vw, -400px) rotate(-40deg);
+        border-radius: 19% 63% 27% 59% / 27% 36% 64% 73%;
+    }
+    to {
+        transform: translate(30vw, 800px) rotate(-10deg);
+        border-radius: 26% 41% 33% 49% / 38% 50% 51% 37%;
+    }
+}
+
+@keyframes move7 {
+    from {
+        transform: translate(90vw, 70vh) rotate(-45deg);
+        border-radius: 93% 13% 72% 33% / 27% 36% 64% 73%;
+    }
+    to {
+        transform: translate(10vw, -100px) rotate(-10deg);
+        border-radius: 26% 61% 33% 69% / 68% 55% 45% 32%;
+    }
+}
+
+
+@keyframes move8 {
+    from {
+        transform: translate(90vw, 70vh) rotate(-45deg);
+        border-radius: 93% 13% 72% 33% / 27% 36% 64% 73%;
+    }
+    to {
+        transform: translate(10vw, -100px) rotate(-10deg);
+        border-radius: 26% 61% 33% 69% / 68% 55% 45% 32%;
+    }
+}
+
+@keyframes move9 {
+    from {
+        transform: translate(-10vw, 70vh) rotate(-90deg);
+        border-radius: 19% 63% 27% 59% / 27% 36% 64% 73%;
+    }
+    to {
+        transform: translate(110vw, 30vh) rotate(-25deg);
+        border-radius: 26% 61% 33% 69% / 68% 55% 45% 32%;
+    }
+}
