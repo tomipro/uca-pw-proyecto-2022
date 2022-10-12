@@ -90,9 +90,9 @@ html {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     position: relative;
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
 }
@@ -275,6 +275,31 @@ html {
     /* transform: scale(1.15); */
     color: var(--light-violet);
 }
+
+
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--light-violet);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    z-index: 999;
+}
+
+.scrollToTopBtn:hover {
+    background-color: var(--fuchsia);
+}
+
 
 /* #home-container .blob {
     max-height: 50vh;
@@ -781,7 +806,7 @@ html {
     padding: 1rem;
 }
 
-.container-usermain main .perfiles-verificados>div {
+.container-usermain main .perfiles-verificados > div {
     /* background: var(--white); */
     padding: 1.5rem;
     border-radius: 2rem;
@@ -822,6 +847,61 @@ html {
     background-color: var(--fuchsia);
     cursor: pointer;
 }
+
+
+/* perfil inventario privado/publico */
+
+.container-usermain main .inventario-usario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    /* background: lightgray; */
+    padding: 1rem;
+}
+
+.container-usermain main .inventario-usario > div {
+    /* background: var(--white); */
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 12vw;
+}
+
+.container-usermain main .inventario-usario >div:hover {
+    scale: 1.02;
+}
+
+.container-usermain main .inventario-usario >div h1 {
+    font-size: 1.5vw;
+}
+
+.container-usermain main .inventario-usario h3:nth-child(3n) {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--slate);
+}
+
+.container-usermain main .inventario-usario >div button {
+    margin-left: 4vw;
+    background: var(--light-violet);
+    border-radius: 15%;
+    padding: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.container-usermain main .inventario-usario >div button:hover {
+    background-color: var(--fuchsia);
+    cursor: pointer;
+}
+
+
 
 
 /* main user screen tabla */

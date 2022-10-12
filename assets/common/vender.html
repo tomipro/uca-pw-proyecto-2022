@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/763913e10f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" type="image/x-icon" href="/assets/imgs/misc/favicon.ico">
+    <script src="../scripts/app.js"></script>
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="container-usermain">
+
+        <!-- sidebar -->
+
+        <aside>
+            <div class="arriba">
+                <div class="logo-usermain">
+                    <img src="../imgs/misc/logo.jpeg" alt="">
+                    <h2>marketplace</h2>
+                    <div class="btn-cerrar">
+                        <i class="fas fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+
+                <a href="./usermain.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <h3>Mercado</h3>
+                </a>
+
+                <a href="./vender.html" class="activo">
+                    <i class="fa-solid fa-cash-register"></i>
+                    <h3>Vender</h3>
+                </a>
+
+                <a href="./subir.html">
+                    <i class="fa-solid fa-upload"></i>
+                    <h3>Subir</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h3>Analisis</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-comments"></i>
+                    <h3>Mensajes</h3>
+                    <span class="cant-mensajes">13</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <h3>Avisos</h3>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <h3>Historial</h3>
+                </a>
+
+                <a href="../../index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h3>Cerrar Sesión</h3>
+                </a>
+
+            </div>
+        </aside>
+
+        <!-- pantalla principal -->
+
+        <main>
+            <h1>Vender</h1>
+
+
+            <h2>Tu inventario publico <i class="fa-solid fa-lock-open"></i></h2>
+            <div class="inventario-usario">
+
+                <div id="inventario">
+                    <h1>MutantApeYachtClub #39</h1>
+                    <a href="#"><img src="../imgs/nft-art/39.jpeg" alt=""></a>
+                    <h3>Comprado: 08/22</h3>
+                    <h3>Precio piso: 14.6 ETH</h3>
+                    <a href="#" class="visitar-perfil"><button class="ver-perfil">Ver mas</button></a>
+                </div>
+
+                <div id="inventario">
+                    <h1>Doodles #142</h1>
+                    <a href="#"><img src="../imgs/nft-art/32.jpeg" alt=""></a>
+                    <h3>Comprado: 08/22</h3>
+                    <h3>Precio piso: 14.6 ETH</h3>
+                    <a href="#" class="visitar-perfil"><button class="ver-perfil">Ver mas</button></a>
+                </div>
+            </div>
+
+            <!-- <h2>Tu inventario privado <i class="fa-solid fa-lock"></i></h2>
+            <div class="inventario-usuario">
+
+                <div id="inventario" class="privado">
+                    <h1>MutantApeYachtClub #39</h1>
+                    <a href="#"><img src="../imgs/nft-art/39.jpeg" alt=""></a>
+                    <h3>Comprado: 08/22</h3>
+                    <h3>Precio piso: 14.6 ETH</h3>
+                    <a href="#" class="visitar-perfil"><button class="ver-perfil">Ver mas</button></a>
+                </div>
+
+                <div id="inventario" class="privado">
+                    <h1>Doodles #142</h1>
+                    <a href="#"><img src="../imgs/nft-art/32.jpeg" alt=""></a>
+                    <h3>Comprado: 08/22</h3>
+                    <h3>Precio piso: 14.6 ETH</h3>
+                    <a href="#" class="visitar-perfil"><button class="ver-perfil">Ver mas</button></a>
+                </div>
+            </div> -->
+
+            <h2>Administrar inventario</h2>
+
+            <div class="top-colecciones">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Coleccion</th>
+                            <th>ID</th>
+                            <th>Privado</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>MutantApeYachtClub</td>
+                            <td>39</td>
+                            <td><input type="checkbox" name="privado" id="check-priv-pub"></td>
+                            <td><input type="submit" value="Guardar"><i class="fa-solid fa-floppy-disk"></i></td>
+                            <!-- <td><a href="#">Ver</a></td> -->
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+        </main>
+
+        <!-- panel derecha -->
+
+        <div class="derecha">
+
+
+
+            <div class="arriba">
+                <button id="btn-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="perfil">
+                    <div class="informacion">
+                        <p>Hola, <b>Tomas</b></p>
+                        <small class="texto">Usuario</small>
+                    </div>
+                    <div class="foto-perfil">
+                        <img src="../imgs/misc/tomas-prodan.jpeg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+            <div class="vendedores">
+                <h2>Vendedores Destacados</h2>
+                <div class="vendedores-destacados">
+
+                    <div class="vendedor-dest">
+                        <div class="foto-perfil">
+                            <img src="../imgs/perfiles/perfil2.jpeg">
+                        </div>
+                        <div class="msj">
+                            <a href="/">
+                                <p>Elon Musk</p>
+                            </a>
+                            <small>73 ventas</small>
+                        </div>
+                    </div>
+
+                    <div class="vendedor-dest">
+                        <div class="foto-perfil">
+                            <img src="../imgs/perfiles/perfil3.jpeg">
+                        </div>
+                        <div class="msj">
+
+                            <a href="/">
+                                <p>Marcos Galperin</p>
+                            </a>
+                            <small>49 ventas</small>
+                        </div>
+                    </div>
+
+                    <div class="vendedor-dest">
+                        <div class="foto-perfil">
+                            <img src="../imgs/perfiles/perfil4.jpeg">
+                        </div>
+                        <div class="msj">
+                            <a href="/">
+                                <p>Harold Stock</p>
+                            </a>
+                            <small>32 ventas</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+
+        </div>
+</body>
+
+</html>
