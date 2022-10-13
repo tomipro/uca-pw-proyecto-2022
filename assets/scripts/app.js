@@ -43,3 +43,6 @@ function fotosRandom() {
     }
 };
 
+//prueba lucas js
+document.getElementById()
+
