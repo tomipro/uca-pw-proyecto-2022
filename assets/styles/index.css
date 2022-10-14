@@ -1040,6 +1040,11 @@ html {
 .td-actividad-reciente{
     border-bottom: 1px solid #dddddd;
     text-align: left;
+
+}
+
+tr:hover {
+    background-color: #ed86eb;
 }
 
 .top-tabla{
