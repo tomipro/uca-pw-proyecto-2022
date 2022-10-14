@@ -1013,9 +1013,43 @@ html {
 }
 
 .actividad-reciente {
+    padding-top: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #000;
+}
+
+.tabla-actividad{
+    border-spacing: 30px;
     border-radius: 10px;
     border-color: #5B5B5B;
+    border-collapse: collapse;
+    width: 100%;
+    
 }
+
+.espacio-tabla-actividad{
+    padding: 5px 30px 25px;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+}
+
+.td-actividad-reciente{
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+}
+
+.top-tabla{
+    padding: 22px 30px;
+    padding-top: 22px;
+    padding-right: 30px;
+    padding-bottom: 22px;
+    padding-left: 30px;
+}
+
 
 
 @media only screen and (max-width: 980px) {
