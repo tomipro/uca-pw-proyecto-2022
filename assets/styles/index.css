@@ -1040,6 +1040,7 @@ html {
 .td-actividad-reciente{
     border-bottom: 1px solid #dddddd;
     text-align: left;
+    border-radius: 2px;
 
 }
 
