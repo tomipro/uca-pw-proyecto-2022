@@ -276,6 +276,11 @@ html {
     color: var(--light-violet);
 }
 
+.iconos {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+}
 
 .scrollToTopBtn {
     position: fixed;
@@ -901,6 +906,60 @@ html {
     cursor: pointer;
 }
 
+/* estilo art */
+
+.container-usermain main .panel-arte {
+    /* display: grid; */
+    /* background: lightgray; */
+    padding: 1rem;
+}
+
+.container-usermain main .panel-arte > div {
+    /* background: var(--white); */
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.container-usermain main .panel-arte img {
+    max-width: 100%;
+}
+.container-usermain main .panel-arte .analisis-arte td {
+    width: 10vw;
+}
+
+.container-usermain main .panel-arte .analisis-arte tr:nth-child(2n + 1) {
+    background-color: var(--light-violet-select);
+}
+
+.container-usermain main .panel-arte h1 {
+    font-size: 1.5vw;
+}
+
+/* .container-usermain main .panel-arte >div button {
+    margin-left: 4vw;
+    background: var(--light-violet);
+    border-radius: 15%;
+    padding: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.container-usermain main .panel-arte >div button:hover {
+    background-color: var(--fuchsia);
+    cursor: pointer;
+} */
 
 
 
