@@ -393,6 +393,49 @@ html {
     display: block;
 }
 
+/* Carrito */
+.pagina-carrito{
+    margin: 80px auto;
+}
+
+.tabla-carrito{
+    width: 100%;
+    border-collapse: collapse;
+}
+.producto-carrito{
+    display: flex;
+    flex-wrap: wrap;
+}
+.barra-headers{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: #a2a4f5;
+    font-weight: bold;
+
+}
+.img-carrito {
+    padding: 5px;
+}
+
+.precio-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.precio-total table{
+    border-top: 3px solid #41F1B6;
+    width: 100%;
+    max-width: 450px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
 
 
 #galeria-container .fotos-galeria img:hover {
