@@ -192,7 +192,7 @@ html {
     height: 50px;
     margin: .25rem;
     left: 1rem;
-    background-image: url(/assets/imgs/misc/logo.jpeg);
+    background-image: url(../imgs/misc/logo.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 999;
@@ -429,11 +429,11 @@ html {
     max-width: 450px;
 }
 
-td:last-child{
+.tabla-carrito td:last-child{
     text-align: right;
 }
 
-th:last-child{
+.tabla-carrito th:last-child{
     text-align: right;
 }
 
@@ -805,7 +805,7 @@ th:last-child{
     margin-left: 1rem;
 }
 
-.container-usermain aside .sidebar .cant-mensajes {
+.container-usermain aside .sidebar .cant-productos {
     background: var(--peligro);
     color: var(--white);
     padding: 2px 10px;
@@ -1093,7 +1093,18 @@ th:last-child{
     border-color: #5B5B5B;
     border-collapse: collapse;
     width: 100%;
-    
+}
+
+.tabla-actividad tr:nth-child(2n + 1) {
+    background-color: var(--light-violet-select);
+}
+
+.tabla-actividad td:nth-child(1) {
+    font-weight: 600;
+}
+
+.tabla-actividad td:last-child {
+    text-align: end;
 }
 
 .espacio-tabla-actividad{
@@ -1111,8 +1122,9 @@ th:last-child{
 
 }
 
-tr:hover {
-    background-color: #ed86eb;
+.tabla-carrito tr:hover {
+    background-color: var(--light-violet-select);
+    transition: 0.3s ease;
 }
 
 .top-tabla{
