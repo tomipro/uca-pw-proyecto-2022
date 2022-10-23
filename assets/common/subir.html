@@ -49,15 +49,9 @@
                     <h3>Subir</h3>
                 </a>
 
-                <a href="#">
+                <a href="./analisis.html">
                     <i class="fa-solid fa-magnifying-glass-chart"></i>
                     <h3>Analisis</h3>
-                </a>
-
-                <a href="#">
-                    <i class="fa-solid fa-comments"></i>
-                    <h3>Mensajes</h3>
-                    <span class="cant-mensajes">13</span>
                 </a>
 
                 <a href="#">
@@ -65,9 +59,10 @@
                     <h3>Avisos</h3>
                 </a>
 
-                <a href="#">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <h3>Historial</h3>
+                <a href="./carrito.html">
+                    <img src="../imgs/components/basket-cart-icon-27.png" style="width:20px;height: 20px;">
+                    <h3>Carrito</h3>
+                    <span class="cant-productos">3</span>
                 </a>
 
                 <a href="../../index.html">
@@ -83,29 +78,49 @@
         <main>
             <h2>Subir</h2>
             <div class="top-colecciones">
-                <table>
+                <table class="subir-arte">
                     <thead>
                         <tr>
                             <th>Coleccion</th>
-                            <th>ID</th>
                             <th>Red</th>
+                            <th>Precio</th>
                             <th>Subir foto</th>
+                            <th></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
 
                         <tr>
                             <!-- <td>MutantApeYachtClub</td> -->
-                            <td><input type="text" placeholder="Coleccion"></td>
-                            <td><input type="text" placeholder="ID"></td>
+                            <!-- <td><input type="text" placeholder="Coleccion"></td> -->
+                            <td><select name="coleccion" id="slct-colec">
+                                <option value="MAYC">MAYC</option>
+                                <option value="Doodles">Doodles</option>
+                            </select></td>
                             <td><select name="redes" id="slct-redes">
                                 <option value="ETH">ETH</option>
                                 <option value="SOL">SOL</option>
                             </select></td>
+                            <td><input type="number" name="precio" id="slct-precio" min="0" value="0" step="0.5" style="width: 4rem;"></td>
                             <!-- <td><a href="#">Ver</a></td> -->
-                            <td><input type="file"></td>
+                            <!-- <td><input type="file"></td> -->
+                            <td><select name="archivo" id="slct-arch">
+                                <option disabled selected value="">-- elija ruta de foto a subir --</option>
+                                <option value="../imgs/nft-art/0.jpeg">../imgs/nft-art/0.jpeg</option>
+                                <option value="../imgs/nft-art/0.jpeg">../imgs/nft-art/01.jpeg</option>
+                                <option value="../imgs/nft-art/0.jpeg">../imgs/nft-art/02.jpeg</option>
+                                <option value="../imgs/nft-art/0.jpeg">../imgs/nft-art/03.jpeg</option>
+                                <option value="../imgs/nft-art/0.jpeg">../imgs/nft-art/04.jpeg</option>
+                                <option value="../imgs/nft-art/0.jpeg">../imgs/nft-art/05.jpeg</option>
+                                <option value="../imgs/nft-art/0.jpeg">../imgs/nft-art/06.jpeg</option>
+                                <option value="../imgs/nft-art/0.jpeg">../imgs/nft-art/07.jpeg</option>
+                                <option value="../imgs/nft-art/0.jpeg">../imgs/nft-art/08.jpeg</option>
+                                <option value="../imgs/nft-art/0.jpeg">../imgs/nft-art/09.jpeg</option>
+                            </select></td>
+                            <td><a href="../imgs/nft-art/0.jpeg">Ver foto</a></td>
+                            <td><button><a href="../common/vender.html">Subir</a></button></td>
                         </tr>
-
                     </tbody>
                 </table>
             </div>

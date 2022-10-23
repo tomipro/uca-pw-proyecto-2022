@@ -8,18 +8,6 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-// if checkbox with id="check-priv-pub" is checked add class "privado" to element with id="inventario"
-// else remove class "privado" from element with id="inventario"
-function privado() {
-    var checkBox = document.getElementById("check-priv-pub");
-    var inventario = document.getElementById("inventario");
-    if (checkBox.checked == true) {
-        inventario.classList.add("privado");
-    } else {
-        inventario.classList.remove("privado");
-    }
-}
-
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -59,7 +47,4 @@ function fotosRandom() {
         foto.src = string[k];
     }
 };
-
-//prueba lucas js
-document.getElementById()
 

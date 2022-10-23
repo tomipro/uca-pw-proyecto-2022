@@ -49,7 +49,7 @@
                     <h3>Subir</h3>
                 </a>
 
-                <a href="./analisis.html" class="activo">
+                <a href="./analisis.html">
                     <i class="fa-solid fa-magnifying-glass-chart"></i>
                     <h3>Analisis</h3>
                 </a>
@@ -59,7 +59,7 @@
                     <h3>Avisos</h3>
                 </a>
 
-                <a href="./carrito.html">
+                <a href="./carrito.html" class="activo">
                     <img src="../imgs/components/basket-cart-icon-27.png" style="width:20px;height: 20px;">
                     <h3>Carrito</h3>
                     <span class="cant-productos">3</span>
@@ -72,55 +72,67 @@
 
             </div>
         </aside>
-        
+
+        <!-- pantalla principal -->
+
         <main>
-            <div class="actividad-reciente">
-                <div class="top-tabla">
-                    <h1 style="padding-bottom: 10px;">Actividad Reciente</h3>
-                </div>
-                <div class="espacio-tabla-actividad">
-                    <table class="tabla-actividad">
-                        <tbody>
-                            <tr class="td-actividad-reciente">
-                                <td>Compra</td>
-                                <td>Vitalik_Buterin</td>
-                                <td>0.13 ETH</td>
-                                <td>$172.38 USD</td>
-                            </tr>
-                            <tr class="td-actividad-reciente">
-                                <td>Venta</td>
-                                <td>Kanye_westok</td>
-                                <td>1.43 ETH</td>
-                                <td>$1,896.18 USD</td>
-                            </tr>
-                            <tr class="td-actividad-reciente">
-                                <td>Compra</td>
-                                <td>satoshi36</td>
-                                <td>1.00 ETH</td>
-                                <td>$1,326.45 USD</td>
-                            </tr>
-                            <tr class="td-actividad-reciente">
-                                <td>Compra</td>
-                                <td>bullMarket.ok</td>
-                                <td>0.12 ETH</td>
-                                <td>$159.12 USD</td>
-                            </tr>
-                            <tr class="td-actividad-reciente">
-                                <td>Venta</td>
-                                <td>cryptoMasacre</td>
-                                <td>0.46 ETH</td>
-                                <td>$609.96 USD</td>
-                            </tr>
-                            <tr class="td-actividad-reciente">
-                                <td>Compra</td>
-                                <td>ih8.bcra</td>
-                                <td>12 ETH</td>
-                                <td>$15,912.23 USD</td>
-                            </tr>
-                        </tbody>
+            <div class="pagina-carrito">
+                <table class="tabla-carrito">
+                    <tr class="fila-carrito">
+                        <th class="barra-headers">Arte</th>
+                        <th class="barra-headers">Usuario</th>
+                        <th class="barra-headers">Precio</th>
+                    </tr>
+                    <tr class="fila-carrito">
+                        <td style="padding-top: 8px;">
+                            <div class="producto-carrito">
+                                <img class="img-carrito" src="../imgs/nft-art/0.jpeg" alt="" style="width: 50px;height: 50px;">
+                                <div>
+                                    <p>mutantApe #142</p>
+                                    <a href="#" style="color: red;">Borrar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>bullMarket.ok</td>
+                        <td>$130</td>
+                    </tr>
+                    <tr class="fila-carrito">
+                        <td style="padding-top: 8px;">
+                            <div class="producto-carrito">
+                                <img class="img-carrito" src="../imgs/nft-art/1.jpeg" alt="" style="width: 50px;height: 50px;">
+                                <div>
+                                    <p>mutantApe #143</p>
+                                    <a href="#" style="color: red;">Borrar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>bullMarket.ok</td>
+                        <td>$145</td>
+                    </tr>
+                    <tr class="fila-carrito">
+                        <td style="padding-top: 8px;">
+                            <div class="producto-carrito">
+                                <img class="img-carrito" src="../imgs/nft-art/2.jpeg" alt="" style="width: 50px;height: 50px;">
+                                <div>
+                                    <p>mutantApe #144</p>
+                                    <a href="#" style="color: red;">Borrar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>boquita.eth</td>
+                        <td>$165</td>
+                    </tr>
+                </table>
+                <div class="precio-total">
+                    <table>
+                        <tr>
+                            <td>Total</td>
+                            <td>$440</td>
+                        </tr>
                     </table>
                 </div>
             </div>
+
         </main>
 
         <!-- panel derecha -->

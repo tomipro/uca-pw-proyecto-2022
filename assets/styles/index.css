@@ -192,7 +192,7 @@ html {
     height: 50px;
     margin: .25rem;
     left: 1rem;
-    background-image: url(/assets/imgs/misc/logo.jpeg);
+    background-image: url(../imgs/misc/logo.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 999;
@@ -401,6 +401,49 @@ html {
     display: block;
 }
 
+/* Carrito */
+.pagina-carrito{
+    margin: 80px auto;
+}
+
+.tabla-carrito{
+    width: 100%;
+    border-collapse: collapse;
+}
+.producto-carrito{
+    display: flex;
+    flex-wrap: wrap;
+}
+.barra-headers{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: #a2a4f5;
+    font-weight: bold;
+
+}
+.img-carrito {
+    padding: 5px;
+}
+
+.precio-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.precio-total table{
+    border-top: 3px solid #41F1B6;
+    width: 100%;
+    max-width: 450px;
+}
+
+.tabla-carrito td:last-child{
+    text-align: right;
+}
+
+.tabla-carrito th:last-child{
+    text-align: right;
+}
 
 
 #galeria-container .fotos-galeria img:hover {
@@ -770,7 +813,7 @@ html {
     margin-left: 1rem;
 }
 
-.container-usermain aside .sidebar .cant-mensajes {
+.container-usermain aside .sidebar .cant-productos {
     background: var(--peligro);
     color: var(--white);
     padding: 2px 10px;
@@ -1005,9 +1048,6 @@ html {
     background-color: var(--light-violet-select);
 }
 
-.container-usermain main .panel-arte h1 {
-    font-size: 1.5vw;
-}
 
 /* main user screen tabla */
 
@@ -1132,7 +1172,18 @@ html {
     border-color: #5B5B5B;
     border-collapse: collapse;
     width: 100%;
+}
 
+.tabla-actividad tr:nth-child(2n + 1) {
+    background-color: var(--light-violet-select);
+}
+
+.tabla-actividad td:nth-child(1) {
+    font-weight: 600;
+}
+
+.tabla-actividad td:last-child {
+    text-align: end;
 }
 
 .espacio-tabla-actividad {
@@ -1150,7 +1201,7 @@ html {
 
 }
 
-.espacio-tabla-actividad tr:hover {
+tr:hover {
     background-color: #ed86eb;
 }
 
