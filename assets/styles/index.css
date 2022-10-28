@@ -19,7 +19,8 @@
 }
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: var(--black);
     font-size: 16px;
     line-height: 1.5;
@@ -1102,8 +1103,6 @@ html {
     scale: 1.15;
 }
 
-
-
 /* main user screen lado derecha */
 
 .container-usermain .derecha {
@@ -1199,10 +1198,6 @@ html {
     text-align: left;
     border-radius: 2px;
 
-}
-
-tr:hover {
-    background-color: #ed86eb;
 }
 
 .top-tabla {
