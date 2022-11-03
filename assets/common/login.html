@@ -5,14 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/763913e10f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/index.css">
-    <script src="https://kit.fontawesome.com/763913e10f.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/assets/imgs/misc/favicon.ico">
     <title>Log in</title>
 </head>
@@ -21,35 +14,33 @@
     <div id="login-container">
         <div class="container-formulario">
             <div class="login-registro">
-                <form action="" class="login-formulario">
+                <form action="" class="login-formulario" onsubmit="return verificacionIniciar()">
                     <h2 class="titulo-login">¡Inicia Sesión!</h2>
                     <div class="campo-ingreso">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Usuario">
+                        <img src="../imgs/icons/user.svg" alt="" class="iconos" style="padding: 1rem;">
+                        <input type="text" placeholder="Usuario" id="usuario">
                     </div>
                     <div class="campo-ingreso">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <img src="../imgs/icons/lock.svg" alt="" class="iconos" style="padding: 1rem;">
+                        <input type="password" placeholder="Contraseña" id="contrasena">
                     </div>
-                    <!-- <div class="requerimientos">Tu contraseña debe contener por lo menos 6 caracteres y minimo un caracter mayuscula, un caracter minuscula y un numero.</div> -->
                     <input type="submit" name="" class="btn solid" value="Iniciar sesion">
                     <a href="../common/usermain.html">Prueba</a>
                 </form>
 
-                <form action="" class="registro-formulario">
+                <form action="" class="registro-formulario" name="registro" onsubmit="return verificacionRegistro()">
                     <h2 class="titulo-login">¡Registrate!</h2>
                     <div class="campo-ingreso">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Usuario" id="usuario" required>
+                        <img src="../imgs/icons/user.svg" alt="" class="iconos" style="padding: 1rem;">
+                        <input type="text" placeholder="Usuario" id="usuario">
                     </div>
                     <div class="campo-ingreso">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="E-mail" id="email" required>
+                        <img src="../imgs/icons/envelope.svg" alt="" class="iconos" style="padding: 1rem;">
+                        <input type="email" placeholder="E-mail" id="email">
                     </div>
                     <div class="campo-ingreso">
-                        <i class="fas fa-lock"></i>
-                        <!-- <input type="password" placeholder="Contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"> -->
-                        <input type="password" placeholder="Contraseña" id="contrasena" required>
+                        <img src="../imgs/icons/lock.svg" alt="" class="iconos" style="padding: 1rem;">
+                        <input type="password" placeholder="Contraseña" id="contrasena">
                     </div>
                     <input type="submit" name="" class="btn" value="Registrarse">
                 </form>

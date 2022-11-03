@@ -19,7 +19,8 @@
 }
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: var(--black);
     font-size: 16px;
     line-height: 1.5;
@@ -192,7 +193,7 @@ html {
     height: 50px;
     margin: .25rem;
     left: 1rem;
-    background-image: url(/assets/imgs/misc/logo.jpeg);
+    background-image: url(../imgs/misc/logo.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 999;
@@ -278,6 +279,13 @@ html {
     /* transform: scale(1.15); */
     color: var(--light-violet);
 }
+
+.iconos {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+}
+
 
 
 .scrollToTopBtn {
@@ -376,6 +384,7 @@ html {
     margin-bottom: 30px;
     margin-top: 100px;
 }
+
 .columna {
     float: left;
     width: 33.3%;
@@ -393,6 +402,49 @@ html {
     display: block;
 }
 
+/* Carrito */
+.pagina-carrito{
+    margin: 80px auto;
+}
+
+.tabla-carrito{
+    width: 100%;
+    border-collapse: collapse;
+}
+.producto-carrito{
+    display: flex;
+    flex-wrap: wrap;
+}
+.barra-headers{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: #a2a4f5;
+    font-weight: bold;
+
+}
+.img-carrito {
+    padding: 5px;
+}
+
+.precio-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.precio-total table{
+    border-top: 3px solid #41F1B6;
+    width: 100%;
+    max-width: 450px;
+}
+
+.tabla-carrito td:last-child{
+    text-align: right;
+}
+
+.tabla-carrito th:last-child{
+    text-align: right;
+}
 
 
 #galeria-container .fotos-galeria img:hover {
@@ -762,7 +814,7 @@ html {
     margin-left: 1rem;
 }
 
-.container-usermain aside .sidebar .cant-mensajes {
+.container-usermain aside .sidebar .cant-productos {
     background: var(--peligro);
     color: var(--white);
     padding: 2px 10px;
@@ -829,7 +881,7 @@ html {
     padding: 1rem;
 }
 
-.container-usermain main .perfiles-verificados > div {
+.container-usermain main .perfiles-verificados>div {
     /* background: var(--white); */
     padding: 1.5rem;
     border-radius: 2rem;
@@ -882,7 +934,7 @@ html {
     padding: 1rem;
 }
 
-.container-usermain main .inventario-usario > div {
+.container-usermain main .inventario-usario>div {
     /* background: var(--white); */
     padding: 1.5rem;
     border-radius: 2rem;
@@ -897,11 +949,11 @@ html {
     width: 12vw;
 }
 
-.container-usermain main .inventario-usario >div:hover {
+.container-usermain main .inventario-usario>div:hover {
     scale: 1.02;
 }
 
-.container-usermain main .inventario-usario >div h1 {
+.container-usermain main .inventario-usario>div h1 {
     font-size: 1.5vw;
 }
 
@@ -911,7 +963,7 @@ html {
     color: var(--slate);
 }
 
-.container-usermain main .inventario-usario >div button {
+.container-usermain main .inventario-usario>div button {
     margin-left: 4vw;
     background: var(--light-violet);
     border-radius: 15%;
@@ -919,12 +971,83 @@ html {
     transition: all 0.3s ease;
 }
 
-.container-usermain main .inventario-usario >div button:hover {
+.container-usermain main .inventario-usario>div button:hover {
     background-color: var(--fuchsia);
     cursor: pointer;
 }
 
+/* estilo art */
 
+.container-usermain main .panel-arte {
+    /* display: grid; */
+    /* background: lightgray; */
+    padding: 1rem;
+}
+
+.container-usermain main .panel-arte>div {
+    /* background: var(--white); */
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.container-usermain main .panel-arte img {
+    max-width: 100%;
+}
+
+.container-usermain main .panel-arte .analisis-arte td {
+    width: 10vw;
+}
+
+.container-usermain main .panel-arte .iconos:hover {
+    transform: translateX(50px);
+    transition: 0.5s linear;
+}
+
+/* CSS */
+.boton-compra {
+    background-color: var(--light-violet);
+    border-radius: 0.5rem;
+    border-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all 0.5s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: absolute;
+    top: 30vh;
+    /* margin-top: 15vh; */
+}
+
+.boton-compra:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    background-color: var(--fuchsia);
+    /* transition-duration: 0.25s; */
+}
+
+.container-usermain main .panel-arte .analisis-arte tr:nth-child(2n + 1) {
+    background-color: var(--light-violet-select);
+}
 
 
 /* main user screen tabla */
@@ -979,8 +1102,6 @@ html {
 .container-usermain main .top-colecciones table tbody tr:hover td {
     scale: 1.15;
 }
-
-
 
 /* main user screen lado derecha */
 
@@ -1044,16 +1165,27 @@ html {
     border-color: #000;
 }
 
-.tabla-actividad{
+.tabla-actividad {
     border-spacing: 30px;
     border-radius: 10px;
     border-color: #5B5B5B;
     border-collapse: collapse;
     width: 100%;
-    
 }
 
-.espacio-tabla-actividad{
+.tabla-actividad tr:nth-child(2n + 1) {
+    background-color: var(--light-violet-select);
+}
+
+.tabla-actividad td:nth-child(1) {
+    font-weight: 600;
+}
+
+.tabla-actividad td:last-child {
+    text-align: end;
+}
+
+.espacio-tabla-actividad {
     padding: 5px 30px 25px;
     padding-top: 5px;
     padding-right: 30px;
@@ -1061,18 +1193,14 @@ html {
     padding-left: 30px;
 }
 
-.td-actividad-reciente{
+.td-actividad-reciente {
     border-bottom: 1px solid #dddddd;
     text-align: left;
     border-radius: 2px;
 
 }
 
-tr:hover {
-    background-color: #ed86eb;
-}
-
-.top-tabla{
+.top-tabla {
     padding: 22px 30px;
     padding-top: 22px;
     padding-right: 30px;
@@ -1196,4 +1324,7 @@ tr:hover {
         grid-row: 3 / 4;
     }
 
+    .boton-compra {
+        padding: 0 2.6rem;
+    }
 }

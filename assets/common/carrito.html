@@ -38,7 +38,7 @@
                     <h3>Vender</h3>
                 </a>
 
-                <a href="./subir.html" class="activo">
+                <a href="./subir.html">
                     <img src="../imgs/icons/upload.svg" alt="" class="iconos" style="width: 20px;">
                     <h3>Subir</h3>
                 </a>
@@ -53,7 +53,7 @@
                     <h3>Avisos</h3>
                 </a>
 
-                <a href="./carrito.html">
+                <a href="./carrito.html" class="activo">
                     <img src="../imgs/components/basket-cart-icon-27.png" style="width:20px;height: 20px;">
                     <h3>Carrito</h3>
                     <span class="cant-productos">3</span>
@@ -70,35 +70,61 @@
         <!-- pantalla principal -->
 
         <main>
-            <h2>Subir</h2>
-            <div class="top-colecciones">
-                <table class="subir-arte">
-                    <thead>
-                        <tr>
-                            <th>Coleccion</th>
-                            <th>ID</th>
-                            <th>Red</th>
-                            <th>Subir foto</th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        <tr>
-                            <!-- <td>MutantApeYachtClub</td> -->
-                            <td><input type="text" placeholder="Coleccion"></td>
-                            <td><input type="text" placeholder="ID"></td>
-                            <td><select name="redes" id="slct-redes">
-                                <option value="ETH">ETH</option>
-                                <option value="SOL">SOL</option>
-                            </select></td>
-                            <td><input type="number" name="precio" id="slct-precio" min="0" value="0" step="0.5" style="width: 4rem;"></td>
-                            <!-- <td><a href="#">Ver</a></td> -->
-                            <td><input type="file"></td>
-                        </tr>
-                    </tbody>
+            <div class="pagina-carrito">
+                <table class="tabla-carrito">
+                    <tr class="fila-carrito">
+                        <th class="barra-headers">Arte</th>
+                        <th class="barra-headers">Usuario</th>
+                        <th class="barra-headers">Precio</th>
+                    </tr>
+                    <tr class="fila-carrito">
+                        <td style="padding-top: 8px;">
+                            <div class="producto-carrito">
+                                <img class="img-carrito" src="../imgs/nft-art/0.jpeg" alt="" style="width: 50px;height: 50px;">
+                                <div>
+                                    <p>mutantApe #142</p>
+                                    <a href="#" style="color: red;">Borrar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>bullMarket.ok</td>
+                        <td>$130</td>
+                    </tr>
+                    <tr class="fila-carrito">
+                        <td style="padding-top: 8px;">
+                            <div class="producto-carrito">
+                                <img class="img-carrito" src="../imgs/nft-art/1.jpeg" alt="" style="width: 50px;height: 50px;">
+                                <div>
+                                    <p>mutantApe #143</p>
+                                    <a href="#" style="color: red;">Borrar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>bullMarket.ok</td>
+                        <td>$145</td>
+                    </tr>
+                    <tr class="fila-carrito">
+                        <td style="padding-top: 8px;">
+                            <div class="producto-carrito">
+                                <img class="img-carrito" src="../imgs/nft-art/2.jpeg" alt="" style="width: 50px;height: 50px;">
+                                <div>
+                                    <p>mutantApe #144</p>
+                                    <a href="#" style="color: red;">Borrar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>boquita.eth</td>
+                        <td>$165</td>
+                    </tr>
                 </table>
+                <div class="precio-total">
+                    <table>
+                        <tr>
+                            <td>Total</td>
+                            <td>$440</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
 
         </main>
@@ -124,53 +150,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 
-            <div class="vendedores">
-                <h2>Vendedores Destacados</h2>
-                <div class="vendedores-destacados">
-
-                    <div class="vendedor-dest">
-                        <div class="foto-perfil">
-                            <img src="../imgs/perfiles/perfil2.jpeg">
-                        </div>
-                        <div class="msj">
-                            <a href="/">
-                                <p>Elon Musk</p>
-                            </a>
-                            <small>73 ventas</small>
-                        </div>
-                    </div>
-
-                    <div class="vendedor-dest">
-                        <div class="foto-perfil">
-                            <img src="../imgs/perfiles/perfil3.jpeg">
-                        </div>
-                        <div class="msj">
-
-                            <a href="/">
-                                <p>Marcos Galperin</p>
-                            </a>
-                            <small>49 ventas</small>
-                        </div>
-                    </div>
-
-                    <div class="vendedor-dest">
-                        <div class="foto-perfil">
-                            <img src="../imgs/perfiles/perfil4.jpeg">
-                        </div>
-                        <div class="msj">
-                            <a href="/">
-                                <p>Harold Stock</p>
-                            </a>
-                            <small>32 ventas</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div> -->
-
         </div>
 </body>
 
