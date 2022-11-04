@@ -1,13 +1,5 @@
 
-const registro_btn = document.querySelector("#pagar");
-
-registro_btn.addEventListener("click", () => {
-    login_container.classList.add("modo-registro");
-});
-
-login_btn.addEventListener("click", () => {
-    login_container.classList.remove("modo-registro");
-});
+const registro_btn = document.querySelector("#pagar-btn");
 
 function verificacionTarjeta(){
     var cardnumber = document.getElementById("card-id").value;
@@ -20,8 +12,8 @@ function verificacionTarjeta(){
         alert("El nombre del titular no puede estar vacio");
         return false;
     }
-    else if (cardnumber.length!=8){
-        alert("El numero de tarjeta debe contener 8 numeros");
+    else if (cardnumber.length!=16){
+        alert("El numero de tarjeta debe contener 16 numeros");
         return false;
     }
 
@@ -42,35 +34,8 @@ function verificacionTarjeta(){
     }
 
     else{
-        return true;
+      alert("Gracias por tu compra!");
+      return true;
     }
 }
-    
-const name = document.getElementById('name')
-const password = document.getElementById('password')
-const form = document.getElementById('form')
-const errorElement = document.getElementById('error')
 
-form.addEventListener('submit', (e) => {
-  let messages = []
-  if (name.value === '' || name.value ==C) {
-    messages.push('Name is required')
-  }
-
-  if (password.value.length <= 6) {
-    messages.push('Password must be longer than 6 characters')
-  }
-
-  if (password.value.length >= 20) {
-    messages.push('Password must be less than 20 characters')
-  }
-
-  if (password.value === 'password') {
-    messages.push('Password cannot be password')
-  }
-
-  if (messages.length > 0) {
-    e.preventDefault()
-    errorElement.innerText = messages.join(', ')
-  }
-})
