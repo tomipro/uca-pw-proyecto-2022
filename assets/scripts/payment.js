@@ -1,6 +1,3 @@
-
-const registro_btn = document.querySelector("#pagar-btn");
-
 function verificacionTarjeta(){
     var cardnumber = document.getElementById("card-id").value;
     var cvv = document.getElementById("codigoseguridad").value;
