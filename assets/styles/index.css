@@ -1208,6 +1208,22 @@ html {
     padding-left: 30px;
 }
 
+/* pago */
+.payment-receive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30vh;
+}
+
+.payment-receive .campo-ingreso {
+    padding: 1rem;
+}
+.payment-receive .btn {
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
 
 
 
@@ -1287,7 +1303,6 @@ html {
         right: initial;
         top: initial;
     }
-
     .login-registro {
         width: 100%;
         height: 50%;
