@@ -82,6 +82,7 @@
                     <a href="#"><img src="../imgs/nft-art/39.jpeg" alt=""></a>
                     <h3>Comprado: 08/22</h3>
                     <h3>Precio piso: 14.6 ETH</h3>
+                    <button class="ver-perfil" onclick="abrir()">Editar</button>
                     <a href="#" class="visitar-perfil"><button class="ver-perfil">Ver mas</button></a>
                 </div>
 
@@ -90,10 +91,26 @@
                     <a href="#"><img src="../imgs/nft-art/32.jpeg" alt=""></a>
                     <h3>Comprado: 08/22</h3>
                     <h3>Precio piso: 14.6 ETH</h3>
+                    <button class="ver-perfil" onclick="abrir()">Editar</button>
                     <a href="#" class="visitar-perfil"><button class="ver-perfil">Ver mas</button></a>
                 </div>
             </div>
-
+            <br>
+            <div class="editar-arte" id="editar-arte">
+                <form action="#" class="editar-arte-formulario">
+                  <h1>Editar</h1>
+              
+                  <label for="precio"><b>Precio: </b></label>
+                  <input type="number" placeholder="Editar Precio" name="precio" min="0" step="0.1">
+                  
+                  <input type="checkbox" id="privado" name="Privado" value="1">
+                  <label for="privado">Privado: </label>
+              
+                  <button type="submit">Aceptar</button>
+                  <button type="button" onclick="cerrar()">Cancelar</button>
+                </form>
+            </div>
+            <br>
             <!-- <h2>Tu inventario privado <i class="fa-solid fa-lock"></i></h2>
             <div class="inventario-usuario">
 
