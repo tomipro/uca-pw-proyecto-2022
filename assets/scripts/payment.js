@@ -30,6 +30,11 @@ function verificacionTarjeta(){
         return false;
     }
 
+    else if(exp.length!=5){
+        alert("La fecha de vencimiento debe ser en el formato: (MM/AA)");
+        return false;
+    }
+
     else{
       alert("Gracias por tu compra!");
       return true;
