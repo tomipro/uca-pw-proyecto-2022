@@ -1211,17 +1211,18 @@ html {
 /* pago */
 .payment-receive{
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     top: 30vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .payment-receive .campo-ingreso {
     padding: 1rem;
 }
 .payment-receive .btn {
-    padding: 0.5rem 2rem;
+    padding: 1rem 3rem;
+    justify-content: center;
     cursor: pointer;
 }
 
