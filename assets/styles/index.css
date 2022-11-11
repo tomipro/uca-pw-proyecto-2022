@@ -964,7 +964,9 @@ html {
 }
 
 .container-usermain main .inventario-usario>div button {
+    justify-content: center;
     margin-left: 4vw;
+    padding-top: 2px;
     background: var(--light-violet);
     border-radius: 15%;
     padding: 0 0.5rem;
@@ -1208,22 +1210,25 @@ html {
     padding-left: 30px;
 }
 
-/* pago */
-.payment-receive{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 30vh;
+.editar-arte{
+    display: none;
+    width: 80%;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.payment-receive .campo-ingreso {
-    padding: 1rem;
+.ver-perfil{
+    background: var(--light-violet);
+    border-radius: 15%;
+    padding: 0 0.5rem;
+    transition: all 0.3s ease;
 }
-.payment-receive .btn {
-    padding: 0.5rem 2rem;
-    cursor: pointer;
-}
+
 
 
 
@@ -1303,6 +1308,7 @@ html {
         right: initial;
         top: initial;
     }
+
     .login-registro {
         width: 100%;
         height: 50%;

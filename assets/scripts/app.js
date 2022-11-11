@@ -48,3 +48,10 @@ function fotosRandom() {
     }
 };
 
+function abrir() {
+    document.getElementById("editar-arte").style.display = "block";
+}
+  
+  function cerrar() {
+    document.getElementById("editar-arte").style.display = "none";
+}
