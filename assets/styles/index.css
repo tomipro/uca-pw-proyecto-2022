@@ -1229,6 +1229,50 @@ html {
     transition: all 0.3s ease;
 }
 
+.payment-receive{
+    margin:auto;
+    position: relative;
+    top: 5vh;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.payment-receive .campo-ingreso {
+    margin: auto;
+    position: relation;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0.2rem 1.5rem 0.2rem;
+    border-radius: 2rem;
+    background: rgb(213, 175, 226);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    margin: 1rem;
+    font-weight: 500;
+
+}
+.payment-receive .btn {
+    padding: 0.5rem 3rem;
+    justify-content: center;
+    cursor: pointer;
+    background: rgb(213, 175, 226);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+
+
+
 
 
 

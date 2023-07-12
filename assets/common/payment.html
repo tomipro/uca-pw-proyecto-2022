@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="icon" type="image/x-icon" href="/assets/imgs/misc/favicon.ico">
     <script src="../scripts/payment.js"></script>
     <title>payment</title>
 </head>
@@ -15,10 +14,9 @@
 
     <form action="" class="registro-formulario" name="registro" onsubmit="return verificacionTarjeta()">
         <h2 class="titulo-login">¡Ingresa tu metodo de pago!</h2>
-
+        <img src="../imgs/misc/card-icon.jpg" alt="" style="width: 2rem; align-items: center;">
 
         <div class="campo-ingreso">
-            <img src="../imgs/icons/user.svg" alt="" class="iconos" style="padding: 1rem;">
             <input type="text" placeholder="Nombre del titular" id="nombre">
         </div>
 
@@ -31,8 +29,10 @@
         </div>
 
         <div class="campo-ingreso">
-            <input type="fechavenc" placeholder="Fecha de exp. (DD/MM/AA)" id="fecha">
+            <input type="fechavenc" placeholder="Fecha de exp. (MM/AA)" id="fecha">
         </div>
-
-        <input type="submit" name="" class="btn" value="Enviar">
+        <a href="./usermain.html">
+            <input type="submit" name="" class="btn" value="Enviar">
+           </a>
     </form>
+</div>
