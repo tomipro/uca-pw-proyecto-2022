@@ -1,5 +1,4 @@
 <?php
-session_start();
 include('config.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -15,10 +14,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         echo "Conexión establecida";
         $datos = mysqli_fetch_assoc($result);
 
+        $_SESSION['signed_in'] = 1;
+
         //guardamos el alias y el nivel de usuario
         $_SESSION['User_Alias'] = $datos['User_Alias'];
         $_SESSION['User_Level'] = $datos['User_Level'];
         header('Location: usermain.php');
+        die();
     }
     else{
         echo 'Usuario o constraseña incorrecta!';
