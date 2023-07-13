@@ -121,4 +121,7 @@ $contenido = <<<HTML
 
     </html>
 HTML;
+
+echo $contenido;
+
 ?>
