@@ -1,6 +1,6 @@
 <?php
-
 include('config.php');
+
 
 if ($_SESSION['signed_in'] == 0){
     session_start();
@@ -66,7 +66,7 @@ $contenido = <<<html
                     <span class="cant-productos">3</span>
                 </a>-->
 
-                <a href="../../index.html">
+                <a href="logout.php">
                     <img src="../imgs/icons/right-from-bracket.svg" alt="" class="iconos" style="width: 20px;">
                     <h3>Cerrar Sesión</h3>
                 </a>
