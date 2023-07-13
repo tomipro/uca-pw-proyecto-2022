@@ -627,7 +627,7 @@ html {
 
 #login-container .panel-der .imagen-login,
 #login-container .panel-der .contenido {
-    transform: translateX(800px);
+    transform: translateX(0px);
 }
 
 #login-container .imagen-login {
@@ -655,7 +655,7 @@ html {
 }
 
 #login-container.modo-registro .panel-der {
-    pointer-events: all;
+    pointer-events: none;
 }
 
 #login-container.modo-registro .login-registro {
