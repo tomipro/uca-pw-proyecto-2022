@@ -9,6 +9,8 @@ if ($_SESSION['signed_in'] == 0){
     die();
 }
 
+
+
 $contenido = <<<html
 <!DOCTYPE html>
 <html lang="en">
@@ -122,9 +124,9 @@ $contenido = <<<html
                 </div>
             </div>
 
-            <!-- Top collections -->
+            <!-- Top arte (Arte mas caro) -->
             <div class="top-colecciones">
-                <h2>Colecciones populares</h2>
+                <h2>Arte popular</h2>
                 <table>
                     <thead>
                         <tr>
