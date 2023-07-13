@@ -121,7 +121,4 @@ $contenido = <<<HTML
 
     </html>
 HTML;
-
-return $contenido;
-
 ?>

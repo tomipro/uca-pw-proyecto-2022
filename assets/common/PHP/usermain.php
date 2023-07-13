@@ -11,10 +11,6 @@
 </head>
 
 <body>
-
-    <?php-3
-        echo 
-    ?>
     <div class="container-usermain">
 
         <!-- sidebar -->
@@ -32,7 +28,7 @@
 
             <div class="sidebar">
 
-                <a href="./usermain.html" class="activo">
+                <a href="./usermain.php" class="activo">
                     <img src="../imgs/icons/shop.svg" alt="" class="iconos" style="width: 20px;">
                     <h3>Mercado</h3>
                 </a>
