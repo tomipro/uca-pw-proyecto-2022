@@ -15,7 +15,6 @@ login_btn.addEventListener("click", () => {
 function verificacionIniciar(){
     var user = document.getElementsByClassName("userreg").value;
     var password = document.getElementsByClassName("userregpass").value;
-    var email = document.getElementById("email").value;
 
     //validacion de los datos del usuario
     if (user.length>30){
@@ -26,10 +25,6 @@ function verificacionIniciar(){
     else if (user == null || user == ""){
         alert("El campo de usuario no puede estar vacio!");
         return false;
-    }
-
-    else if(email.includes("@") == false || email.includes(".")){
-        alert("Por favor ingresar un email valido!")
     }
 
     //validacion de los datos de la contraseña
@@ -61,6 +56,10 @@ function verificacionRegistro(){
     else if (user == null || user == ""){
         alert("El campo de usuario no puede estar vacio!");
         return false;
+    }
+
+    else if(email.includes("@") == false || email.includes(".")){
+        alert("Por favor ingresar un email valido!")
     }
 
     //validacion de los datos de la contraseña

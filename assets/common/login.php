@@ -3,10 +3,10 @@ session_start();
 include('config.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $email = $_POST['User_Email'];
+    $alias = $_POST['User_Alias'];
     $password = $_POST['User_Password'];
 
-    $sql = "SELECT User_Email, User_Password, User_Alias, User_Level FROM Usuarios WHERE User_Email ='$email' AND User_Password='$password'";
+    $sql = "SELECT User_Alias, User_Password, User_Level FROM Usuarios WHERE User_Alias ='$alias' AND User_Password='$password'";
     $result = $link->query($sql);
 
 
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         header('Location: usermain.php');
     }
     else{
-        echo 'Email o constraseña incorrecta!';
+        echo 'Usuario o constraseña incorrecta!';
     }
 }
 
@@ -46,7 +46,7 @@ $contenido = <<<LOGIN
                         <h2 class="titulo-login">¡Inicia Sesión!</h2>
                         <div class="campo-ingreso">
                             <img src="../imgs/icons/user.svg" alt="" class="iconos" style="padding: 1rem;">
-                            <input type="text" placeholder="Usuario" class="userreg" name="User_Email">
+                            <input type="text" placeholder="Usuario" class="userreg" name="User_Alias">
                         </div>
                         <div class="campo-ingreso">
                             <img src="../imgs/icons/lock.svg" alt="" class="iconos" style="padding: 1rem;">
