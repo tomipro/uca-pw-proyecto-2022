@@ -1,6 +1,7 @@
 <?php
 
 include('config.php');
+include('perfil.php');
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $alias = $_POST['User_Alias'];

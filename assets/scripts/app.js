@@ -35,7 +35,7 @@ function fotosRandom() {
     // console.log(lista);
 
     for (var j = 0; j < n; j++) {
-        string[j] = './assets/imgs/nft-art/';
+        string[j] = '../imgs/nft-art/';
         string[j] += lista[j] + '.jpeg';
         image[j] = string[j];
         // console.log(string[j]);

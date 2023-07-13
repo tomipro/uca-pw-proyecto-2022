@@ -1,5 +1,6 @@
 <?php
 include('config.php');
+include('perfil.php');
 
 
 if ($_SESSION['signed_in'] == 0){
@@ -8,17 +9,6 @@ if ($_SESSION['signed_in'] == 0){
     header('Location: http://localhost/uca-pw-proyecto-2022/assets/common/login.php');
     die();
 }
-
-$username = strtoupper($_SESSION['User_Alias']);
-$nivel = "";
-
-if($_SESSION['User_Level'] == 1){
-    $nivel = "Administrador";
-}
-else{
-    $nivel = "Usuario";
-}
-
 
 $contenido = <<<html
 <!DOCTYPE html>

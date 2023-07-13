@@ -35,7 +35,7 @@ $contenido = <<<HTML
             </div>
         </nav>
 
-        <button class="scrollToTopBtn" onclick="topFunction()" id="myBtn" title="Go to top"><img src="./assets/imgs/icons/arrow-up.svg" alt="" class="iconos"></button>
+        <button class="scrollToTopBtn" onclick="topFunction()" id="myBtn" title="Go to top"><img src="../imgs/icons/arrow-up.svg" alt="" class="iconos"></button>
 
         <!-- Inicio -->
         <section id="home-container">
@@ -54,7 +54,7 @@ $contenido = <<<HTML
                 </div>
                 <div class="content">
                     <h1 class="title" id="titulo">¡Hola!</h1>
-                    <img src="./assets/imgs/nft-art/10.jpeg" alt="" class="home-pic">
+                    <img src="../imgs/nft-art/10.jpeg" alt="" class="home-pic">
                     <a href="login.php" class="home-btn">Iniciar sesión/Registro</a>
                 </div>
             </div>
@@ -69,20 +69,20 @@ $contenido = <<<HTML
                 <h1 class="galeria">Arte Destacada</h1>
                 <div class="refresh-btn">
                     <button href="" id="refresh-button">
-                        <img src="./assets/imgs/icons/arrow-rotate-right.svg" alt="" class="iconos" style="float: left;"><label for="refresh">Refrescar</label>
+                        <img src="../imgs/icons/arrow-rotate-right.svg" alt="" class="iconos" style="float: left;"><label for="refresh">Refrescar</label>
                     </button>
                 </div>
                 <div class="fotos-galeria">
-                    <img src="./assets/imgs/nft-art/0.jpeg" alt="" id="gallery0">
-                    <img src="./assets/imgs/nft-art/1.jpeg" alt="" id="gallery1">
-                    <img src="./assets/imgs/nft-art/2.jpeg" alt="" id="gallery2">
-                    <img src="./assets/imgs/nft-art/3.jpeg" alt="" id="gallery3">
-                    <img src="./assets/imgs/nft-art/4.jpeg" alt="" id="gallery4">
-                    <img src="./assets/imgs/nft-art/5.jpeg" alt="" id="gallery5">
-                    <img src="./assets/imgs/nft-art/6.jpeg" alt="" id="gallery6">
-                    <img src="./assets/imgs/nft-art/7.jpeg" alt="" id="gallery7">
-                    <img src="./assets/imgs/nft-art/8.jpeg" alt="" id="gallery8">
-                    <img src="./assets/imgs/nft-art/9.jpeg" alt="" id="gallery9">
+                    <img src="../imgs/nft-art/0.jpeg" alt="" id="gallery0">
+                    <img src="../imgs/nft-art/1.jpeg" alt="" id="gallery1">
+                    <img src="../imgs/nft-art/2.jpeg" alt="" id="gallery2">
+                    <img src="../imgs/nft-art/3.jpeg" alt="" id="gallery3">
+                    <img src="../imgs/nft-art/4.jpeg" alt="" id="gallery4">
+                    <img src="../imgs/nft-art/5.jpeg" alt="" id="gallery5">
+                    <img src="../imgs/nft-art/6.jpeg" alt="" id="gallery6">
+                    <img src="../imgs/nft-art/7.jpeg" alt="" id="gallery7">
+                    <img src="../imgs/nft-art/8.jpeg" alt="" id="gallery8">
+                    <img src="../imgs/nft-art/9.jpeg" alt="" id="gallery9">
                 </div>
         </section>
 
@@ -95,7 +95,7 @@ $contenido = <<<HTML
             <div class="fila">
                 <div class="columna">
                     <div class="card">
-                        <img src="./assets/imgs/misc/lucas-deb.JPG" alt="lucas" width="100%">
+                        <img src="../imgs/misc/lucas-deb.JPG" alt="lucas" width="100%">
                         <div class="container">
                             <h2>Lucas Debarbieri</h2>
                             <p class="titulo">Integrante</p>
@@ -106,7 +106,7 @@ $contenido = <<<HTML
                 </div>
                 <div class="columna">
                     <div class="card">
-                        <img src="./assets/imgs/misc/tomas-prodan.jpeg" alt="tomas" width="100%">
+                        <img src="../imgs/misc/tomas-prodan.jpeg" alt="tomas" width="100%">
                         <div class="container">
                             <h2>Tomas Prodan</h2>
                             <p class="titulo">Integrante</p>
@@ -117,7 +117,7 @@ $contenido = <<<HTML
                 </div>
                 <div class="columna">
                     <div class="card">
-                        <img src="./assets/imgs/misc/Picture1.jpg" alt="joaquin" width="100%">
+                        <img src="../imgs/misc/Picture1.jpg" alt="joaquin" width="100%">
                         <div class="container">
                             <h2>Joaquin Judez Rivas</h2>
                             <p class="titulo">Integrante</p>
@@ -128,7 +128,7 @@ $contenido = <<<HTML
                 </div>
             </div>
         </div>
-        <script src="./assets/scripts/app.js"></script>
+        <script src="../scripts/app.js"></script>
     </body>
 
     </html>
