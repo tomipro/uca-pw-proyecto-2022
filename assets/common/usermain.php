@@ -9,6 +9,15 @@ if ($_SESSION['signed_in'] == 0){
     die();
 }
 
+$username = strtoupper($_SESSION['User_Alias']);
+$nivel = "";
+
+if($_SESSION['User_Level'] == 1){
+    $nivel = "Administrador";
+}
+else{
+    $nivel = "Usuario";
+}
 
 
 $contenido = <<<html
@@ -291,11 +300,10 @@ $contenido = <<<html
 
                 <div class="perfil">
                     <div class="informacion">
-                        <p>Hola, <b>Tomas</b></p>
-                        <small class="texto">Usuario</small>
+                        <p>Hola, <b>{$username}</b></p>
+                        <small class="texto">{$nivel}</small>
                     </div>
                     <div class="foto-perfil">
-                        <img src="../imgs/misc/tomas-prodan.jpeg">
                     </div>
                 </div>
             </div>
