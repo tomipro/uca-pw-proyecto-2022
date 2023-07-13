@@ -12,7 +12,7 @@ login_btn.addEventListener("click", () => {
 
 //verificacion del registro
 
-function verificacionRegistro(){
+function verificacionIniciar(){
     var user = document.getElementsByClassName("userreg").value;
     var password = document.getElementsByClassName("userregpass").value;
     var email = document.getElementById("email").value;
@@ -47,7 +47,7 @@ function verificacionRegistro(){
     }
 }
 
-function verificacionIniciar(){
+function verificacionRegistro(){
     var user = document.getElementById("usuario").value;
     var password = document.getElementById("contrasena").value;
     var email = document.getElementById("email").value;
